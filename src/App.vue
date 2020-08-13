@@ -1,9 +1,20 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div class="app">
+    <MainHeader />
     <router-view />
   </div>
 </template>
+
+<script>
+import Vue from 'vue';
+import MainHeader from '@/components/Header.vue';
+
+const App = Vue.extend({
+  name: 'App',
+  components: {
+    MainHeader,
+  },
+});
+
+export default App;
+</script>
