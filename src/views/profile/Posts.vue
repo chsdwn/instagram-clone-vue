@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import CustomText from '@/components/CustomText';
+import CustomText from '@/components/CustomText.vue';
 
 export default Vue.extend({
   name: 'ProfilePosts',
