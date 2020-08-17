@@ -20,7 +20,7 @@
           <IconExploreFill v-if="$route.name === 'Explore'" class="icon" />
           <IconExplore v-else class="icon" />
         </router-link>
-        <router-link to="/profile">Profile</router-link>
+        <router-link to="/profile"><Avatar :size="22"/></router-link>
       </nav>
     </Container>
   </header>
@@ -29,6 +29,7 @@
 <script>
 import Vue from 'vue';
 
+import Avatar from '@/components/Avatar.vue';
 import Container from '@/components/Container.vue';
 
 import IconDirect from '@/icons/direct.svg';
@@ -41,6 +42,7 @@ import IconHomeFill from '@/icons/home-fill.svg';
 const MainHeader = Vue.extend({
   name: 'MainHeader',
   components: {
+    Avatar,
     Container,
     IconDirect,
     IconDirectFill,
